@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.flutter.plugins.flutter_plugin_android_lifecycle",
+    "module": "flutter_plugin_android_lifecycle_debug",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_plugin_android_lifecycle_debug-1.0.aar",
+          "url": "flutter_plugin_android_lifecycle_debug-1.0.aar",
+          "size": 4885,
+          "sha512": "d806b14d4151d1ebecef08eb54cf29b422611db8a2c62b6e5d1b0ed0cd1c7767f1c8fa36c91e22a94e757349b94ab5f2f3c7da49d6646522a32cd0a611416998",
+          "sha256": "27d3d2cc31a63e7721ff78c7bc060aa026e3f93e919dce71056a532db321f841",
+          "sha1": "deae40c8560293d64ac20101e6ebb3852e630bac",
+          "md5": "d09e2adf331c4a71f16f747493b42975"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_plugin_android_lifecycle_debug-1.0.aar",
+          "url": "flutter_plugin_android_lifecycle_debug-1.0.aar",
+          "size": 4885,
+          "sha512": "d806b14d4151d1ebecef08eb54cf29b422611db8a2c62b6e5d1b0ed0cd1c7767f1c8fa36c91e22a94e757349b94ab5f2f3c7da49d6646522a32cd0a611416998",
+          "sha256": "27d3d2cc31a63e7721ff78c7bc060aa026e3f93e919dce71056a532db321f841",
+          "sha1": "deae40c8560293d64ac20101e6ebb3852e630bac",
+          "md5": "d09e2adf331c4a71f16f747493b42975"
+        }
+      ]
+    }
+  ]
+}

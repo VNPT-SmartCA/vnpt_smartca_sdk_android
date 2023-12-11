@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "appmire.be.flutterjailbreakdetection",
+    "module": "flutter_jailbreak_detection_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_jailbreak_detection_release-1.0.aar",
+          "url": "flutter_jailbreak_detection_release-1.0.aar",
+          "size": 5058,
+          "sha512": "9c4ce3232119766ba8d512af35861b52358a24327af24e421e84a81b69b4482b4cfc18564cef8e05e5c8fc1416f3efc8fbdca8193e38eebe132f8396ce2d4df9",
+          "sha256": "fccbbb103473f2b218625d4ba5903e66cbd0ff3089b044547cc940a90d26f094",
+          "sha1": "6e3aa31abd9378502a37bfaac3cf7aa5e908539a",
+          "md5": "c953ac1c77c284d4447d66e6916f9681"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "com.github.scottyab",
+          "module": "rootbeer",
+          "version": {
+            "requires": "0.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_jailbreak_detection_release-1.0.aar",
+          "url": "flutter_jailbreak_detection_release-1.0.aar",
+          "size": 5058,
+          "sha512": "9c4ce3232119766ba8d512af35861b52358a24327af24e421e84a81b69b4482b4cfc18564cef8e05e5c8fc1416f3efc8fbdca8193e38eebe132f8396ce2d4df9",
+          "sha256": "fccbbb103473f2b218625d4ba5903e66cbd0ff3089b044547cc940a90d26f094",
+          "sha1": "6e3aa31abd9378502a37bfaac3cf7aa5e908539a",
+          "md5": "c953ac1c77c284d4447d66e6916f9681"
+        }
+      ]
+    }
+  ]
+}

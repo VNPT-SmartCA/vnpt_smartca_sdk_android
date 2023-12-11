@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.syncfusion.flutter.pdfviewer",
+    "module": "syncfusion_flutter_pdfviewer_profile",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_profile-1.0.aar",
+          "url": "syncfusion_flutter_pdfviewer_profile-1.0.aar",
+          "size": 10129,
+          "sha512": "1c258d14eac2ae50f9b223f11481a8df91aba188fc35fe7ac66d89a1693ee29a6ada6e80814fefece997c6368875da62cf0206d74ab439e4b58939803ab0215b",
+          "sha256": "fb260c93e35c579cf7605630ce18504a701471b8d9e0af83e1ad4865b3a136b6",
+          "sha1": "b615f67b4234919f348b795e33289519e9e0a510",
+          "md5": "df4854c4e52ea9ba44c303ddcbff41c0"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.device_info",
+          "module": "device_info_plus_profile",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_profile-1.0.aar",
+          "url": "syncfusion_flutter_pdfviewer_profile-1.0.aar",
+          "size": 10129,
+          "sha512": "1c258d14eac2ae50f9b223f11481a8df91aba188fc35fe7ac66d89a1693ee29a6ada6e80814fefece997c6368875da62cf0206d74ab439e4b58939803ab0215b",
+          "sha256": "fb260c93e35c579cf7605630ce18504a701471b8d9e0af83e1ad4865b3a136b6",
+          "sha1": "b615f67b4234919f348b795e33289519e9e0a510",
+          "md5": "df4854c4e52ea9ba44c303ddcbff41c0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.crazecoder.openfile",
+    "module": "open_file_safe_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "open_file_safe_release-1.0.aar",
+          "url": "open_file_safe_release-1.0.aar",
+          "size": 13892,
+          "sha512": "0f4d6652d712413812482826c7bbfb6fa2f35e37a366c7eac636f4f95133e9275b67e7b3f568fa0ad31a9410c44f9f24a56bdd4b7f26fde727a314505573de82",
+          "sha256": "7782c4b350c5a32fb248da98d173ebb349e49f191966c54593b88cf56f12ed7b",
+          "sha1": "d3bef71e5ade57181e3d819b5395a3326bc6076f",
+          "md5": "d37aeb6073d5dc62bcb2aaad80aaa8b9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+          }
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "open_file_safe_release-1.0.aar",
+          "url": "open_file_safe_release-1.0.aar",
+          "size": 13892,
+          "sha512": "0f4d6652d712413812482826c7bbfb6fa2f35e37a366c7eac636f4f95133e9275b67e7b3f568fa0ad31a9410c44f9f24a56bdd4b7f26fde727a314505573de82",
+          "sha256": "7782c4b350c5a32fb248da98d173ebb349e49f191966c54593b88cf56f12ed7b",
+          "sha1": "d3bef71e5ade57181e3d819b5395a3326bc6076f",
+          "md5": "d37aeb6073d5dc62bcb2aaad80aaa8b9"
+        }
+      ]
+    }
+  ]
+}
