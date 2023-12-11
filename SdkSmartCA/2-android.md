@@ -40,14 +40,60 @@ dependencyResolutionManagement {
     }  
 }  
 ````
-- Thêm các implementation vào app/build.gradle
-````dependencies {
+- Thêm các thông tin cấu hình vào app/build.gradle
+````
+ plugins {  
+  id 'com.android.application'  
+  id 'org.jetbrains.kotlin.android'  
+  id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.21'  
+}
+````
+- Trong android
+````
+packagingOptions {  
+  pickFirst 'lib/x86/libc++_shared.so'  
+  pickFirst 'lib/x86_64/libc++_shared.so'  
+  pickFirst 'lib/armeabi-v7a/libc++_shared.so'  
+  pickFirst 'lib/arm64-v8a/libc++_shared.so'  
+}  
+  
+compileOptions {  
+  sourceCompatibility JavaVersion.VERSION_1_8  
+  targetCompatibility JavaVersion.VERSION_1_8  
+}  
+kotlinOptions {  
+  jvmTarget = '1.8'  
+}  
+aaptOptions {  
+  noCompress "bic"  
+}  
+sourceSets {  
+  main.java.srcDirs += 'src/main/kotlin'  
+}
+````
+- Trong android/defaultConfig thêm
+````
+ ndk {  
+  // abiFilters 'armeabi-v7a', 'arm64-v8a','x86_64'  
+  debugSymbolLevel 'FULL'  
+}
+````
+- Trong android/buildType thêm 
+````
+profile {  
+  initWith debug  
+}
+````
+- Trong dependencies bổ sung các implementation liên quan tới sdk
+````
+dependencies {
 //..
 implementation 'com.vnpt.smartca.module.vnpt_smartca_module:flutter_release:1.0'  
-//Đường dẫn tới các file aar
+//Đường dẫn tới các file aar (xem bước 1)
 implementation files('libs/vnpt_smartca_sdk_lib-release.aar')  
 implementation files('libs/ekyc_sdk-release-v3.2.7.aar')  
 implementation files('libs/eContract-v3.1.0.aar'
+..//
  }
 ````
 
